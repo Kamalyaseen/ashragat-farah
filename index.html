@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <base target="_self">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عشرقات فرح - متجر الهدايا الإلكتروني</title>
+    <meta name="description" content="متجر عشرقات فرح - وجهتك الأولى لشراء الهدايا المميزة والهدايا التذكارية الفريدة">
+    <meta name="keywords" content="هدايا, هدايا, متجر إلكتروني, عشرقات فرح, هدايا تذكارية, هدايا مميزة">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#8B4513",
+                        secondary: "#D2691E",
+                        accent: "#FFD700",
+                        light: "#FFF8DC",
+                        dark: "#654321"
+                    },
+                    fontFamily: {
+                        'cairo': ['Cairo', 'sans-serif']
+                    },
+                    spacing: {
+                        '18': '4.5rem',
+                        '22': '5.5rem',
+                        '30': '7.5rem'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(139, 69, 19, 0.15);
+        }
+        .category-btn.active {
+            background-color: #8B4513;
+            color: white;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-light font-cairo text-dark">
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between py-4">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3 space-x-reverse">
+                    <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
+                        <i class="fas fa-gift text-white text-xl"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-2xl font-bold text-primary">عشرقات فرح</h1>
+                        <p class="text-sm text-secondary">متجر الهدايا الإلكتروني</p>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex items-center space-x-8 space-x-reverse">
+                    <a href="#home" class="nav-link text-dark hover:text-primary transition-colors duration-300 font-medium">الرئيسية</a>
+                    <a href="#products" class="nav-link text-dark hover:text-primary transition-colors duration-300 font-medium">المنتجات</a>
+                    <a href="#categories" class="nav-link text-dark hover:text-primary transition-colors duration-300 font-medium">الفئات</a>
+                    <a href="#about" class="nav-link text-dark hover:text-primary transition-colors duration-300 font-medium">من نحن</a>
+                    <a href="#contact" class="nav-link text-dark hover:text-primary transition-colors duration-300 font-medium">اتصل بنا</a>
+                </nav>
+
+                <!-- Cart & User Icons -->
+                <div class="flex items-center space-x-4 space-x-reverse">
+                    <button class="relative p-2 hover:bg-gray-100 rounded-full transition-colors duration-300">
+                        <i class="fas fa-shopping-cart text-primary text-xl"></i>
+                        <span class="absolute -top-1 -left-1 bg-secondary text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">3</span>
+                    </button>
+                    <button class="p-2 hover:bg-gray-100 rounded-full transition-colors duration-300">
+                        <i class="fas fa-user text-primary text-xl"></i>
+                    </button>
+                    <button class="md:hidden p-2 hover:bg-gray-100 rounded-full transition-colors duration-300" id="mobile-menu-btn">
+                        <i class="fas fa-bars text-primary text-xl"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div class="md:hidden hidden bg-white border-t border-gray-200 py-4" id="mobile-menu">
+                <div class="flex flex-col space-y-4">
+                    <a href="#home" class="nav-link text-dark hover:text-primary transition-colors duration-300 font-medium py-2 px-4">الرئيسية</a>
+                    <a href="#products" class="nav-link text-dark hover:text-primary transition-colors duration-300 font-medium py-2 px-4">المنتجات</a>
+                    <a href="#categories" class="nav-link text-dark hover:text-primary transition-colors duration-300 font-medium py-2 px-4">الفئات</a>
+                    <a href="#about" class="nav-link text-dark hover:text-primary transition-colors duration-300 font-medium py-2 px-4">من نحن</a>
+                    <a href="#contact" class="nav-link text-dark hover:text-primary transition-colors duration-300 font-medium py-2 px-4">اتصل بنا</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-gradient-to-l from-primary to-secondary text-white py-16 md:py-24">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6">هدايا تلامس القلب</h2>
+                    <p class="text-xl mb-8 opacity-90">في عشرقات فرح، نقدم لك تشكيلة مميزة من الهدايا التي تعبر عن مشاعرك بأجمل طريقة. كل هدية قصة، وكل قصة فرحة.</p>
+                    <div class="flex flex-wrap gap-4">
+                        <button class="bg-accent text-dark font-bold py-3 px-8 rounded-full hover:bg-yellow-500 transition-colors duration-300 shadow-lg">
+                            <i class="fas fa-shopping-bag ml-2"></i>
+                            تصفح المنتجات
+                        </button>
+                        <button class="bg-transparent border-2 border-white text-white font-bold py-3 px-8 rounded-full hover:bg-white hover:text-primary transition-colors duration-300">
+                            <i class="fas fa-play-circle ml-2"></i>
+                            شاهد الفيديو
+                        </button>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="relative">
+                        <img 
+                            src="https://picsum.photos/500/400?random=1" 
+                            alt="هدايا مميزة من عشرقات فرح" 
+                            class="rounded-2xl shadow-2xl"
+                            loading="lazy"
+                        />
+                        <div class="absolute -bottom-6 -right-6 bg-white text-primary p-6 rounded-2xl shadow-xl">
+                            <div class="text-center">
+                                <div class="text-3xl font-bold">500+</div>
+                                <div class="text-lg">هدية مميزة</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">فئات الهدايا</h2>
+                <p class="text-gray-600 text-lg max-w-2xl mx-auto">اختر من بين مجموعة واسعة من الهدايا المناسبة لكل المناسبات</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
+                <button class="category-btn active bg-primary text-white py-4 px-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 flex flex-col items-center">
+                    <i class="fas fa-birthday-cake text-2xl mb-2"></i>
+                    <span class="font-bold">أعياد الميلاد</span>
+                </button>
+                <button class="category-btn bg-light text-dark py-4 px-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 flex flex-col items-center">
+                    <i class="fas fa-heart text-2xl mb-2"></i>
+                    <span class="font-bold">هدايا الزواج</span>
+                </button>
+                <button class="category-btn bg-light text-dark py-4 px-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 flex flex-col items-center">
+                    <i class="fas fa-baby text-2xl mb-2"></i>
+                    <span class="font-bold">المولود الجديد</span>
+                </button>
+                <button class="category-btn bg-light text-dark py-4 px-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 flex flex-col items-center">
+                    <i class="fas fa-graduation-cap text-2xl mb-2"></i>
+                    <span class="font-bold">التخرج</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center mb-12">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-primary">أحدث الهدايا</h2>
