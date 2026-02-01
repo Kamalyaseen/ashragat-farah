@@ -5,19 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>عشرقات فرح - متجر الهدايا</title>
   <meta name="description" content="عشرقات فرح | متجر هدايا مميزة لكل المناسبات">
+
+  <!-- Fonts & Icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <!-- Mobile Optimizations -->
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+      -webkit-text-size-adjust: 100%;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    a, button {
+      min-height: 44px;
+    }
+    @media (max-width: 640px) {
+      h1 { font-size: 1.5rem; }
+      h2 { font-size: 1.6rem; }
+      p  { font-size: 1rem; }
+      .hero-btn {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+  </style>
 </head>
 
-<body class="bg-[#FFF8DC] font-['Cairo'] text-gray-800">
+<body class="bg-[#FFF8DC] text-gray-800">
 
 <!-- Header -->
 <header class="bg-white shadow sticky top-0 z-50">
   <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-    <h1 class="text-2xl font-bold text-[#8B4513]">عشرقات فرح 🎁</h1>
+    <h1 class="text-2xl font-bold text-[#8B4513]">🎁 عشرقات فرح</h1>
     <div class="flex gap-4 text-xl">
       <a href="https://www.facebook.com/profile.php?id=61561650569434" target="_blank">
         <i class="fab fa-facebook text-[#8B4513]"></i>
@@ -30,33 +56,31 @@
 </header>
 
 <!-- Hero -->
-<section class="bg-gradient-to-l from-[#8B4513] to-[#D2691E] text-white py-20">
+<section class="bg-gradient-to-l from-[#8B4513] to-[#D2691E] text-white py-16">
   <div class="max-w-6xl mx-auto px-4 text-center">
-    <h2 class="text-4xl font-bold mb-6">هدايا تلامس القلب</h2>
-    <p class="text-lg mb-8">
-      تشكيلة هدايا مميزة تعبّر عن مشاعرك بأجمل طريقة ✨
-    </p>
+    <h2 class="text-4xl font-bold mb-4">هدايا تلامس القلب</h2>
+    <p class="mb-8">تشكيلة هدايا مميزة تعبّر عن مشاعرك بأجمل طريقة ✨</p>
 
     <a
-      href="https://wa.me/249993426965?text=السلام%20عليكم%20🌸%20عايز%20اطلب%20هدية%20من%20متجر%20عشرقات%20فرح%20🎁%20ممكن%20ترسلوا%20لي%20التفاصيل؟"
+      href="https://wa.me/249993426965?text=السلام%20عليكم%20🌸%20عايز%20اطلب%20هدية%20من%20متجر%20عشرقات%20فرح%20🎁"
       target="_blank"
-      class="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-8 rounded-full text-lg shadow-lg"
+      class="hero-btn inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-8 rounded-full shadow-lg"
     >
       <i class="fab fa-whatsapp text-2xl"></i>
-      اطلب الآن عبر واتساب
+      اطلب هديتك الآن
     </a>
   </div>
 </section>
 
 <!-- Categories -->
-<section class="py-16 bg-white">
+<section class="py-12 bg-white">
   <div class="max-w-6xl mx-auto px-4 text-center">
-    <h2 class="text-3xl font-bold text-[#8B4513] mb-10">فئات الهدايا</h2>
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-      <div class="bg-[#FFF8DC] p-6 rounded-xl shadow">🎂 أعياد ميلاد</div>
-      <div class="bg-[#FFF8DC] p-6 rounded-xl shadow">💍 زواج</div>
-      <div class="bg-[#FFF8DC] p-6 rounded-xl shadow">👶 مولود جديد</div>
-      <div class="bg-[#FFF8DC] p-6 rounded-xl shadow">🎓 تخرج</div>
+    <h2 class="text-3xl font-bold text-[#8B4513] mb-8">فئات الهدايا</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div class="bg-[#FFF8DC] p-4 rounded-xl shadow">🎂 أعياد ميلاد</div>
+      <div class="bg-[#FFF8DC] p-4 rounded-xl shadow">💍 زواج</div>
+      <div class="bg-[#FFF8DC] p-4 rounded-xl shadow">👶 مولود جديد</div>
+      <div class="bg-[#FFF8DC] p-4 rounded-xl shadow">🎓 تخرج</div>
     </div>
   </div>
 </section>
@@ -64,50 +88,42 @@
 <!-- Products -->
 <section class="py-16 bg-[#FFF8DC]">
   <div class="max-w-6xl mx-auto px-4">
-    <h2 class="text-3xl font-bold text-[#8B4513] text-center mb-12">
-      منتجاتنا 🎁
-    </h2>
+    <h2 class="text-3xl font-bold text-[#8B4513] text-center mb-12">منتجاتنا 🎁</h2>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 
       <!-- Product 1 -->
-      <div class="bg-white rounded-xl shadow p-6 text-center">
-        <img src="product1.jpg.png" class="rounded-lg mb-4 mx-auto">
+      <div class="bg-white rounded-xl shadow p-4 text-center">
+        <img src="product1.jpg.png" class="rounded-lg mb-4 mx-auto object-cover" style="aspect-ratio:3/4;">
         <h3 class="text-xl font-bold mb-2">هدية عيد ميلاد</h3>
         <p class="text-gray-600 mb-4">هدية أنيقة ومناسبة لكل الأعمار.</p>
-        <a
-          href="https://wa.me/249993426965?text=السلام%20عليكم%20🌸%20عايز%20اطلب%20منتج:%20هدية%20عيد%20ميلاد%20🎁"
-          target="_blank"
-          class="inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-6 rounded-full"
-        >
+        <a href="https://wa.me/249993426965?text=السلام%20عليكم%20🌸%20عايز%20اطلب%20منتج:%20هدية%20عيد%20ميلاد%20🎁"
+           target="_blank"
+           class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-6 rounded-full inline-block">
           اطلب عبر واتساب
         </a>
       </div>
 
       <!-- Product 2 -->
-      <div class="bg-white rounded-xl shadow p-6 text-center">
-        <img src="product2.jpg.png" class="rounded-lg mb-4 mx-auto">
+      <div class="bg-white rounded-xl shadow p-4 text-center">
+        <img src="product2.jpg.png" class="rounded-lg mb-4 mx-auto object-cover" style="aspect-ratio:3/4;">
         <h3 class="text-xl font-bold mb-2">هدية زواج</h3>
         <p class="text-gray-600 mb-4">اختيار راقي ليوم مميز.</p>
-        <a
-          href="https://wa.me/249993426965?text=السلام%20عليكم%20🌸%20عايز%20اطلب%20منتج:%20هدية%20زواج%20🎁"
-          target="_blank"
-          class="inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-6 rounded-full"
-        >
+        <a href="https://wa.me/249993426965?text=السلام%20عليكم%20🌸%20عايز%20اطلب%20منتج:%20هدية%20زواج%20🎁"
+           target="_blank"
+           class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-6 rounded-full inline-block">
           اطلب عبر واتساب
         </a>
       </div>
 
       <!-- Product 3 -->
-      <div class="bg-white rounded-xl shadow p-6 text-center">
-        <img src="product3.jpg.png" class="rounded-lg mb-4 mx-auto">
+      <div class="bg-white rounded-xl shadow p-4 text-center">
+        <img src="product3.jpg.png" class="rounded-lg mb-4 mx-auto object-cover" style="aspect-ratio:3/4;">
         <h3 class="text-xl font-bold mb-2">هدية تخرج</h3>
         <p class="text-gray-600 mb-4">تذكار جميل لفرحة النجاح.</p>
-        <a
-          href="https://wa.me/249993426965?text=السلام%20عليكم%20🌸%20عايز%20اطلب%20منتج:%20هدية%20تخرج%20🎁"
-          target="_blank"
-          class="inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-6 rounded-full"
-        >
+        <a href="https://wa.me/249993426965?text=السلام%20عليكم%20🌸%20عايز%20اطلب%20منتج:%20هدية%20تخرج%20🎁"
+           target="_blank"
+           class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-6 rounded-full inline-block">
           اطلب عبر واتساب
         </a>
       </div>
@@ -118,14 +134,14 @@
 
 <!-- Footer -->
 <footer class="bg-[#8B4513] text-white py-6 text-center">
-  <p>© 2026 عشرقات فرح — جميع الحقوق محفوظة</p>
+  © 2026 عشرقات فرح — جميع الحقوق محفوظة
 </footer>
 
-<!-- WhatsApp Floating Button -->
+<!-- Floating WhatsApp -->
 <a
   href="https://wa.me/249993426965?text=السلام%20عليكم%20🌸%20عايز%20اطلب%20هدية%20من%20متجر%20عشرقات%20فرح%20🎁"
   target="_blank"
-  style="position:fixed;bottom:20px;right:20px;background:#25d366;color:white;padding:15px;border-radius:50%;font-size:26px;z-index:9999;"
+  style="position:fixed;bottom:16px;right:16px;background:#25d366;color:white;padding:14px;border-radius:50%;font-size:26px;z-index:9999;box-shadow:0 6px 16px rgba(0,0,0,.25);"
 >
   <i class="fab fa-whatsapp"></i>
 </a>
