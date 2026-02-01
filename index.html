@@ -1,62 +1,68 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>عشرقات فرح | متجر الهدايا</title>
-  <meta name="description" content="متجر عشرقات فرح للهدايا الفاخرة – اطلب الآن عبر واتساب" />
+<title>عشرقات فرح | متجر هدايا فاخرة</title>
+<meta name="description" content="عشرقات فرح – هدايا فاخرة رجالية ونسائية وتنفيذ حسب الطلب">
 
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-  <!-- Tailwind -->
-  <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-  <style>
-    body { font-family: 'Cairo', sans-serif; }
-    .gold { color:#f5c76a; }
-    .btn-gold { background:#f5c76a; color:#000; }
-    .card { background:#1c1c1c; }
-  </style>
+<style>
+body{font-family:'Cairo',sans-serif;background:#0f0f0f;color:#f5f5f5}
+.gold{color:#d4af37}
+.card{background:#1a1a1a}
+.btn-gold{background:#d4af37;color:#000}
+.btn-gold:hover{background:#c9a635}
+.product-img{width:100%;height:260px;object-fit:cover;border-radius:12px;background:#111}
+@media(max-width:640px){.product-img{height:220px}}
+</style>
 </head>
 
-<body class="bg-[#0f0f0f] text-white">
+<body>
 
 <!-- HEADER -->
-<header class="flex justify-between items-center px-4 py-4 border-b border-gray-800">
-  <h1 class="text-xl font-bold gold">🎁 عشرقات فرح</h1>
-  <div class="flex gap-4">
-    <a href="https://www.facebook.com/profile.php?id=61561650569434" target="_blank"><i class="fab fa-facebook gold"></i></a>
-    <a href="https://tiktok.com/@ashragatfarah0" target="_blank"><i class="fab fa-tiktok gold"></i></a>
+<header class="border-b border-gray-800">
+  <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+    <h1 class="text-2xl font-bold gold">🎁 عشرقات فرح</h1>
+    <div class="flex gap-4 text-xl">
+      <a href="https://www.facebook.com/profile.php?id=61561650569434" target="_blank"><i class="fab fa-facebook gold"></i></a>
+      <a href="https://tiktok.com/@ashragatfarah0" target="_blank"><i class="fab fa-tiktok gold"></i></a>
+    </div>
   </div>
 </header>
 
 <!-- HERO -->
-<section class="py-20 text-center bg-gradient-to-l from-[#8b4a12] to-[#5a2d0c]">
-  <h2 class="text-4xl font-bold mb-4">هدايا تلامس القلب</h2>
-  <p class="mb-6 text-lg">تشكيلة هدايا فاخرة تعبّر عن مشاعرك بأجمل طريقة ✨</p>
+<section class="py-20 text-center bg-gradient-to-b from-black to-[#141414]">
+  <div class="max-w-4xl mx-auto px-4">
+    <h2 class="text-4xl font-bold mb-4 gold">هدايا فاخرة تليق بالمناسبة</h2>
+    <p class="mb-8 text-gray-300">اختيارات راقية أو تنفيذ خاص حسب ذوقك ✨</p>
 
-  <a
-    href="https://wa.me/249993426965?text=السلام%20عليكم%20🌸%0Aعايز%20أطلب%20هدية%20من%20متجر%20عشرقات%20فرح%20🎁"
-    target="_blank"
-    class="inline-flex items-center gap-2 btn-gold px-8 py-3 rounded-full font-bold">
-    <i class="fab fa-whatsapp"></i>
-    اطلب الآن عبر واتساب
-  </a>
+    <a href="https://wa.me/249993426965?text=السلام%20عليكم%20🌸%20عايز%20اطلب%20هدية%20من%20متجر%20عشرقات%20فرح%20🎁"
+       target="_blank"
+       class="inline-flex items-center gap-2 btn-gold px-10 py-4 rounded-full font-bold">
+      <i class="fab fa-whatsapp"></i>
+      اختَر هديتك الآن
+    </a>
+
+    <p class="mt-4 text-sm text-gray-400">📸 الصور والأسعار داخل كتالوج واتساب</p>
+  </div>
 </section>
 
-<!-- CATEGORIES -->
+<!-- SECTIONS -->
 <section class="py-20">
-  <h2 class="text-3xl font-bold text-center gold mb-10">الأقسام</h2>
-
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 px-4 max-w-6xl mx-auto">
-    <div class="card p-6 rounded-xl text-center">🎁 هدايا رجالية</div>
-    <div class="card p-6 rounded-xl text-center">💐 هدايا نسائية</div>
-    <div class="card p-6 rounded-xl text-center">✨ اختر ونحن ننفذ</div>
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-10 gold">الأقسام</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="card p-6 text-center rounded-xl">🕶️ هدايا رجالية</div>
+      <div class="card p-6 text-center rounded-xl">💍 هدايا نسائية</div>
+      <div class="card p-6 text-center rounded-xl">✨ اختر ونحن ننفّذ</div>
+    </div>
   </div>
 </section>
 
@@ -67,38 +73,62 @@
 
   <div class="grid grid-cols-1 md:grid-cols-3 gap-6 px-4 max-w-6xl mx-auto">
 
-    <!-- PRODUCT 1 -->
     <div class="card p-4 rounded-xl">
-      <img src="product1.jpg.png" class="rounded-lg mb-4">
-      <h3 class="font-bold mb-2">هدية نسائية فاخرة</h3>
-      <p class="text-sm text-gray-400 mb-3">تنسيق أنيق يناسب جميع المناسبات</p>
-      <a href="https://wa.me/249993426965?text=عايز%20أطلب%20هدية%20نسائية%20🎁"
-         target="_blank"
-         class="btn-gold w-full block text-center py-2 rounded-full font-bold">
+      <img src="product1.jpg" alt="بوكس دلع البنات" class="product-img mb-4" loading="lazy">
+      <h3 class="font-bold mb-1">بوكس دلع البنات</h3>
+      <p class="text-sm text-gray-400 mb-3">دب – شوكولاتة – عطر – تنسيق أنيق</p>
+      <a href="https://wa.me/249993426965?text=عايز%20أطلب%20بوكس%20دلع%20البنات%20🎁"
+         target="_blank" class="btn-gold w-full block text-center py-2 rounded-full font-bold">
          اطلب عبر واتساب
       </a>
     </div>
 
-    <!-- PRODUCT 2 -->
     <div class="card p-4 rounded-xl">
-      <img src="product2.jpg.png" class="rounded-lg mb-4">
-      <h3 class="font-bold mb-2">هدية رجالية فاخرة</h3>
-      <p class="text-sm text-gray-400 mb-3">تصميم عملي وأنيق</p>
-      <a href="https://wa.me/249993426965?text=عايز%20أطلب%20هدية%20رجالية%20🎁"
-         target="_blank"
-         class="btn-gold w-full block text-center py-2 rounded-full font-bold">
+      <img src="product2.jpg" alt="بوكس جمال وأناقة" class="product-img mb-4" loading="lazy">
+      <h3 class="font-bold mb-1">بوكس جمال وأناقة</h3>
+      <p class="text-sm text-gray-400 mb-3">ميكب – عطر – لمسة فاخرة</p>
+      <a href="https://wa.me/249993426965?text=عايز%20أطلب%20بوكس%20جمال%20وأناقة%20💐"
+         target="_blank" class="btn-gold w-full block text-center py-2 rounded-full font-bold">
          اطلب عبر واتساب
       </a>
     </div>
 
-    <!-- PRODUCT 3 -->
     <div class="card p-4 rounded-xl">
-      <img src="product3.jpg.png" class="rounded-lg mb-4">
-      <h3 class="font-bold mb-2">تنفيذ حسب الطلب</h3>
-      <p class="text-sm text-gray-400 mb-3">اختر الفكرة ونحن ننفذها</p>
-      <a href="https://wa.me/249993426965?text=عايز%20تنفيذ%20هدية%20حسب%20الطلب%20✨"
-         target="_blank"
-         class="btn-gold w-full block text-center py-2 rounded-full font-bold">
+      <img src="product3.jpg" alt="بوكس Dove النسائي" class="product-img mb-4" loading="lazy">
+      <h3 class="font-bold mb-1">بوكس Dove النسائي</h3>
+      <p class="text-sm text-gray-400 mb-3">عناية بالبشرة + شوكولاتة</p>
+      <a href="https://wa.me/249993426965?text=عايز%20أطلب%20بوكس%20Dove%20النسائي%20🌸"
+         target="_blank" class="btn-gold w-full block text-center py-2 rounded-full font-bold">
+         اطلب عبر واتساب
+      </a>
+    </div>
+
+    <div class="card p-4 rounded-xl">
+      <img src="product4.jpg" alt="بوكس رجالي فاخر" class="product-img mb-4" loading="lazy">
+      <h3 class="font-bold mb-1">بوكس رجالي فاخر</h3>
+      <p class="text-sm text-gray-400 mb-3">ساعة – عطر – شوكولاتة</p>
+      <a href="https://wa.me/249993426965?text=عايز%20أطلب%20بوكس%20رجالي%20فاخر%20🎁"
+         target="_blank" class="btn-gold w-full block text-center py-2 rounded-full font-bold">
+         اطلب عبر واتساب
+      </a>
+    </div>
+
+    <div class="card p-4 rounded-xl">
+      <img src="product5.jpg" alt="بوكس شوكولاتة وورد" class="product-img mb-4" loading="lazy">
+      <h3 class="font-bold mb-1">بوكس شوكولاتة وورد</h3>
+      <p class="text-sm text-gray-400 mb-3">شوكولاتة – ورد – تنسيق راقي</p>
+      <a href="https://wa.me/249993426965?text=عايز%20أطلب%20بوكس%20شوكولاتة%20وورد%20🍫🌹"
+         target="_blank" class="btn-gold w-full block text-center py-2 rounded-full font-bold">
+         اطلب عبر واتساب
+      </a>
+    </div>
+
+    <div class="card p-4 rounded-xl">
+      <img src="product6.jpg" alt="اختر ونحن ننفذ" class="product-img mb-4" loading="lazy">
+      <h3 class="font-bold mb-1">اختر ونحن ننفّذ</h3>
+      <p class="text-sm text-gray-400 mb-3">تنفيذ حسب ذوقك وميزانيتك</p>
+      <a href="https://wa.me/249993426965?text=عايز%20تنفيذ%20بوكس%20حسب%20الطلب%20✨"
+         target="_blank" class="btn-gold w-full block text-center py-2 rounded-full font-bold">
          تواصل معنا
       </a>
     </div>
@@ -107,9 +137,8 @@
 </section>
 
 <!-- WHY US -->
-<section class="py-24">
+<section class="py-20">
   <h2 class="text-3xl font-bold text-center gold mb-12">لماذا عشرقات فرح؟</h2>
-
   <div class="grid grid-cols-1 md:grid-cols-3 gap-6 px-4 max-w-6xl mx-auto">
     <div class="card p-6 rounded-xl text-center">🎁 تغليف فاخر</div>
     <div class="card p-6 rounded-xl text-center">⚡ تنفيذ سريع</div>
@@ -120,7 +149,6 @@
 <!-- REVIEWS -->
 <section class="py-24 bg-[#141414]">
   <h2 class="text-3xl font-bold text-center gold mb-12">⭐ آراء العملاء</h2>
-
   <div class="grid grid-cols-1 md:grid-cols-3 gap-6 px-4 max-w-6xl mx-auto">
     <div class="card p-6 rounded-xl">⭐⭐⭐⭐⭐<p class="mt-2">الهدية كانت أجمل من الصور</p></div>
     <div class="card p-6 rounded-xl">⭐⭐⭐⭐⭐<p class="mt-2">تعامل راقي وسرعة تنفيذ</p></div>
@@ -130,16 +158,29 @@
 
 <!-- STATS -->
 <section class="py-16 text-center">
-  <div class="flex justify-center gap-10">
-    <div>👁️ <span class="gold text-xl font-bold">350</span><p>زائر وثقوا بنا</p></div>
-    <div>✅ <span class="gold text-xl font-bold">500+</span><p>طلبات منفذة</p></div>
+  <div class="flex justify-center gap-12">
+    <div>
+      👁️ <p class="gold text-xl font-bold">350</p>
+      <p class="text-sm">زائر وثقوا بنا</p>
+    </div>
+    <div>
+      ✅ <p class="gold text-xl font-bold">500+</p>
+      <p class="text-sm">طلبات منفذة</p>
+    </div>
   </div>
 </section>
 
 <!-- FOOTER -->
-<footer class="py-6 text-center text-gray-400 text-sm">
-  © 2026 عشرقات فرح – جميع الحقوق محفوظة
+<footer class="border-t border-gray-800 py-6 text-center text-gray-400 text-sm">
+  © 2026 عشرقات فرح — جميع الحقوق محفوظة
 </footer>
+
+<!-- FLOATING WHATSAPP -->
+<a href="https://wa.me/249993426965"
+   target="_blank"
+   style="position:fixed;bottom:18px;right:18px;background:#25d366;color:#fff;padding:14px;border-radius:50%;font-size:26px;z-index:9999;">
+<i class="fab fa-whatsapp"></i>
+</a>
 
 </body>
 </html>
