@@ -1,115 +1,151 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>عشرقات فرح | متجر الهدايا</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>عشرقات فرح | متجر الهدايا</title>
 
-<script src="https://cdn.tailwindcss.com"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta name="description" content="عشرقات فرح | متجر هدايا في السودان – هدايا رجالية ونسائية – اطلب عبر واتساب">
+  <meta name="keywords" content="هدايا, متجر هدايا, عشرقات فرح, بوكس هدايا, هدايا السودان">
 
-<style>
-body { font-family: 'Cairo', sans-serif; background:#0f0f0f; color:#fff }
-.card:hover { transform: translateY(-6px); transition:.3s }
-</style>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body { font-family: system-ui; background:#0f0f0f; color:#fff }
+    img { aspect-ratio:1/1; object-fit:cover }
+  </style>
 </head>
 
 <body>
 
-<!-- HEADER -->
+<!-- ====== Header ====== -->
 <header class="bg-black p-4 flex justify-between items-center">
-<h1 class="text-xl font-bold text-yellow-400">🎁 عشرقات فرح</h1>
-<div class="flex gap-4 text-yellow-400">
-<a href="https://www.facebook.com/profile.php?id=61561650569434" target="_blank"><i class="fab fa-facebook"></i></a>
-<a href="https://tiktok.com/@ashragatfarah0" target="_blank"><i class="fab fa-tiktok"></i></a>
-</div>
+  <h1 class="text-xl font-bold text-yellow-400">🎁 عشرقات فرح</h1>
+  <div class="flex gap-4 text-yellow-400">
+    <a href="https://www.facebook.com/profile.php?id=61561650569434" target="_blank"><i class="fab fa-facebook"></i></a>
+    <a href="https://www.tiktok.com/@ashragatfarah0" target="_blank"><i class="fab fa-tiktok"></i></a>
+  </div>
 </header>
 
-<!-- HERO -->
-<section class="text-center py-10 bg-gradient-to-l from-yellow-600 to-yellow-800">
-<h2 class="text-3xl font-bold mb-3">هدايا تلامس القلب 💛</h2>
-<p class="mb-5">اختار الهدية ونحن ننفذها باحتراف</p>
-
-<a href="https://wa.me/249993426965?text=السلام+عليكم+🌸%0Aعايز+اطلب+هدية+من+عشرقات+فرح+🎁"
-class="inline-block bg-green-500 px-6 py-3 rounded-full font-bold">
-<i class="fab fa-whatsapp"></i> اطلب الآن عبر واتساب
-</a>
+<!-- ====== Hero ====== -->
+<section class="text-center py-10 bg-gradient-to-l from-yellow-700 to-yellow-500">
+  <h2 class="text-3xl font-bold mb-3">💛 هدايا تلامس القلب</h2>
+  <p class="mb-5">اختر الهدية ونحن ننفذها بأجمل إحساس</p>
+  <a href="https://wa.me/249993426965" class="bg-green-500 px-6 py-3 rounded-full font-bold">
+    🟢 اطلب الآن عبر واتساب
+  </a>
 </section>
 
-<!-- COUNTERS -->
-<section class="grid grid-cols-2 text-center py-6 bg-black">
-<div>
-<p class="text-2xl font-bold text-yellow-400">350+</p>
-<p>زائر للموقع 👁️</p>
-</div>
-<div>
-<p class="text-2xl font-bold text-yellow-400">500+</p>
-<p>طلب منفذ ✅</p>
-</div>
+<!-- ====== Counters ====== -->
+<section class="flex justify-center gap-10 py-6 bg-black text-center">
+  <div>
+    <div class="text-xl text-green-400 font-bold">+500</div>
+    <div class="text-sm">طلبات منفذة</div>
+  </div>
+  <div>
+    <div id="visits" class="text-xl text-yellow-400 font-bold">...</div>
+    <div class="text-sm">زوار الموقع</div>
+  </div>
 </section>
 
-<!-- PRODUCTS -->
-<section class="p-6">
-<h2 class="text-center text-2xl font-bold text-yellow-400 mb-6">منتجاتنا المختارة</h2>
+<!-- ====== Products ====== -->
+<section class="px-4 py-10">
+  <h3 class="text-2xl font-bold text-center text-yellow-400 mb-8">منتجاتنا المختارة</h3>
 
-<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
-<!-- PRODUCT CARD -->
-<div class="card bg-[#1a1a1a] rounded-xl p-3">
-<img src="product1.jpg.png" class="rounded mb-3 w-full aspect-square object-cover">
-<h3 class="font-bold mb-2">هدية نسائية فاخرة</h3>
-<a href="https://wa.me/249993426965?text=السلام+عليكم+🌸%0Aعايز+اطلب+المنتج:+هدية+نسائية+فاخرة+🎁"
-class="block bg-green-500 text-center py-2 rounded">اطلب عبر واتساب</a>
-</div>
+    <!-- Product Card -->
+    <div class="bg-neutral-900 rounded-lg p-3">
+      <img src="product1.jpg.png" class="rounded mb-3">
+      <h4 class="font-bold mb-1">هدية عيد ميلاد</h4>
+      <a href="#" onclick="this.href=order('هدية عيد ميلاد','product1.jpg.png')"
+         class="block bg-green-500 text-center py-2 rounded font-bold">
+        🟢 اطلب عبر واتساب
+      </a>
+    </div>
 
-<div class="card bg-[#1a1a1a] rounded-xl p-3">
-<img src="product2.jpg.png" class="rounded mb-3 w-full aspect-square object-cover">
-<h3 class="font-bold mb-2">هدية رجالية فاخرة</h3>
-<a href="https://wa.me/249993426965?text=السلام+عليكم+🌸%0Aعايز+اطلب+المنتج:+هدية+رجالية+فاخرة+🎁"
-class="block bg-green-500 text-center py-2 rounded">اطلب عبر واتساب</a>
-</div>
+    <div class="bg-neutral-900 rounded-lg p-3">
+      <img src="product2.jpg.png" class="rounded mb-3">
+      <h4 class="font-bold mb-1">هدية رجالية فاخرة</h4>
+      <a href="#" onclick="this.href=order('هدية رجالية فاخرة','product2.jpg.png')"
+         class="block bg-green-500 text-center py-2 rounded font-bold">
+        🟢 اطلب عبر واتساب
+      </a>
+    </div>
 
-<div class="card bg-[#1a1a1a] rounded-xl p-3">
-<img src="product3.jpg.png" class="rounded mb-3 w-full aspect-square object-cover">
-<h3 class="font-bold mb-2">هدية عيد ميلاد</h3>
-<a href="https://wa.me/249993426965?text=السلام+عليكم+🌸%0Aعايز+اطلب+المنتج:+هدية+عيد+ميلاد+🎂"
-class="block bg-green-500 text-center py-2 rounded">اطلب عبر واتساب</a>
-</div>
+    <div class="bg-neutral-900 rounded-lg p-3">
+      <img src="product3.jpg.png" class="rounded mb-3">
+      <h4 class="font-bold mb-1">هدية نسائية فاخرة</h4>
+      <a href="#" onclick="this.href=order('هدية نسائية فاخرة','product3.jpg.png')"
+         class="block bg-green-500 text-center py-2 rounded font-bold">
+        🟢 اطلب عبر واتساب
+      </a>
+    </div>
 
-<div class="card bg-[#1a1a1a] rounded-xl p-3">
-<img src="product4.jpg.png" class="rounded mb-3 w-full aspect-square object-cover">
-<h3 class="font-bold mb-2">بوكس شوكولاتة</h3>
-<a href="https://wa.me/249993426965?text=السلام+عليكم+🌸%0Aعايز+اطلب+المنتج:+بوكس+شوكولاتة+🍫"
-class="block bg-green-500 text-center py-2 rounded">اطلب عبر واتساب</a>
-</div>
+    <div class="bg-neutral-900 rounded-lg p-3">
+      <img src="product4.jpg.png" class="rounded mb-3">
+      <h4 class="font-bold mb-1">اختار ونحن ننفذ</h4>
+      <a href="https://wa.me/249993426965" class="block bg-yellow-500 text-black text-center py-2 rounded font-bold">
+        💬 تواصل معنا
+      </a>
+    </div>
 
-<div class="card bg-[#1a1a1a] rounded-xl p-3">
-<img src="product5.jpg.png" class="rounded mb-3 w-full aspect-square object-cover">
-<h3 class="font-bold mb-2">هدية خاصة</h3>
-<a href="https://wa.me/249993426965?text=السلام+عليكم+🌸%0Aعايز+اطلب+هدية+خاصة+✨"
-class="block bg-green-500 text-center py-2 rounded">اطلب عبر واتساب</a>
-</div>
+    <div class="bg-neutral-900 rounded-lg p-3">
+      <img src="product5.jpg.png" class="rounded mb-3">
+      <h4 class="font-bold mb-1">هدية خاصة</h4>
+      <a href="#" onclick="this.href=order('هدية خاصة','product5.jpg.png')"
+         class="block bg-green-500 text-center py-2 rounded font-bold">
+        🟢 اطلب عبر واتساب
+      </a>
+    </div>
 
-<div class="card bg-[#1a1a1a] rounded-xl p-3">
-<img src="product6.jpg.png" class="rounded mb-3 w-full aspect-square object-cover">
-<h3 class="font-bold mb-2">اختار ونحن ننفذ</h3>
-<a href="https://wa.me/249993426965?text=السلام+عليكم+🌸%0Aعايز+اختار+هدية+وانتو+تنفذو+🎁"
-class="block bg-yellow-500 text-black text-center py-2 rounded">تواصل معنا</a>
-</div>
+    <div class="bg-neutral-900 rounded-lg p-3">
+      <img src="product6.jpg.png" class="rounded mb-3">
+      <h4 class="font-bold mb-1">بوكس شوكولاتة</h4>
+      <a href="#" onclick="this.href=order('بوكس شوكولاتة','product6.jpg.png')"
+         class="block bg-green-500 text-center py-2 rounded font-bold">
+        🟢 اطلب عبر واتساب
+      </a>
+    </div>
 
-</div>
+  </div>
 </section>
 
-<!-- FLOATING WHATSAPP -->
-<a href="https://wa.me/249993426965"
-class="fixed bottom-5 left-5 bg-green-500 p-4 rounded-full text-white text-xl">
-<i class="fab fa-whatsapp"></i>
-</a>
-
-<!-- FOOTER -->
-<footer class="text-center text-sm p-4 bg-black text-gray-400">
-© 2026 عشرقات فرح – جميع الحقوق محفوظة
+<!-- ====== Footer ====== -->
+<footer class="text-center py-6 bg-black text-sm text-gray-400">
+  ⭐ ثقة عملائنا هي رأس مالنا <br>
+  © 2026 عشرقات فرح – جميع الحقوق محفوظة
 </footer>
+
+<!-- ====== WhatsApp Function ====== -->
+<script>
+function order(product, image){
+  const msg =
+`السلام عليكم 🌸
+عايز أطلب الهدية التالية من متجر *عشرقات فرح* 🎁
+
+📦 اسم المنتج: ${product}
+🖼️ صورة المنتج:
+https://kamalyaseen.github.io/ashragat-farah/${image}
+
+🔗 شاهدتها في الموقع:
+https://kamalyaseen.github.io/ashragat-farah
+
+ممكن السعر والتفاصيل؟ 💛`;
+
+  return "https://wa.me/249993426965?text=" + encodeURIComponent(msg);
+}
+</script>
+
+<!-- ====== Real Visitor Counter ====== -->
+<script>
+fetch('https://api.countapi.xyz/hit/ashragat-farah/visits')
+  .then(res => res.json())
+  .then(data => {
+    document.getElementById('visits').innerText = data.value;
+  });
+</script>
 
 </body>
 </html>
